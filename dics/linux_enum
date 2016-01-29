@@ -1,0 +1,67 @@
+# Basic system info
+/etc/motd, Message of the day
+/etc/issue,Operating System
+etc/lsb-release,Operating System
+/etc/redhat-release,Operating System
+/proc/version,Kernel
+/etc/hostname, Hostname
+/proc/cmdline
+# Networking Info
+/etc/network/interfaces, Interfaces
+/etc/sysconfig/network, Interfaces
+/etc/networks, Networks
+/etc/resolv.conf
+# File System Info
+/etc/fstab, fstab entries
+/proc/mounts, Mounts
+# Scheduled Cron Jobs
+/etc/crontab, crontab
+/etc/anacrontab, anacrontab
+/etc/at.allow, at.allow
+/etc/at.deny, at.deny
+/etc/cron.allow, cron.allow
+/etc/cron.deny, cron.deny
+# User Info
+/etc/passwd, All users
+/etc/group, Groups
+/etc/shadow, Shadow
+/etc/sudoers, Sudoers (privileged)
+/proc/self/environ, Environment
+# Config files
+/etc/apache/conf/httpd.conf, Apache config
+/etc/apache2/apache2.conf, Apache config
+/etc/apache2/conf/httpd.conf, Apache config
+/etc/apache2/httpd.conf, Apache config
+/etc/apache2/httpd2.conf, Apache config
+/etc/apache2/ports.conf, Apache config
+/etc/apache2/sites-enabled/000-default, Apache config
+/etc/apache2/sites-available/default, Apache config
+/etc/apache2/ssl-global.conf, Apache config
+/etc/apache2/vhosts.d/00_default_vhost.conf, Apache config
+/etc/httpd.conf, Apache config
+/etc/httpd/conf/httpd.conf, Apache config
+/etc/httpd/extra/httpd-ssl.conf, Apache config
+/etc/httpd/extra/httpd-vhosts.conf, Apache config
+/etc/httpd/httpd.conf, Apache config
+/etc/httpd/mod_php.conf, Apache config
+/opt/lampp/etc/httpd.conf, Apache config
+/usr/local/apache/conf/httpd.conf
+/usr/local/apache2/conf/extra/httpd-ssl.conf, Apache config
+/usr/local/apache2/conf/httpd.conf, Apache config
+/usr/local/etc/apache22/httpd.conf, Apache config
+/usr/local/etc/apache2/httpd.conf, Apache config
+/usr/pkg/etc/httpd/httpd.conf, Apache config
+/var/www/conf/httpd.conf, Apache config
+/etc/mysql/my.cnf, MySql config
+/etc/my.conf, MySql config
+/etc/ssh/sshd_config, SSH config
+# File/Directory Privs
+# ~/.bash_history, Bash History
+# ~/.mysql_history, MySql History
+# ~/.ssh/authorized_keys, Authorized Keys
+# ~/.ssh/identity.pub, identity.pub
+# ~/.ssh/identity, identity
+# ~/.ssh/id_rsa.pub, id_rsa.pub
+# ~/.ssh/id_rsa, id_rsa
+# ~/.ssh/id_dsa.pub, id_dsa.pub
+# ~/.ssh/id_dsa, id_dsa
