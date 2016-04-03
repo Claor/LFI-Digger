@@ -37,7 +37,6 @@ for l in file:
 			r = requests.get(url.replace('%LFI%', f[0]))
 			if e != sum(1 for line in r.text.strip().split('\n')): 
 				print "\n\033[1;32m[+]\033[1;m \033[1;33m"+f[1].strip()+"\033[1;m"+" - "+r.url+"\n"
-				#print BeautifulSoup(re.sub("<br */? *>","\n",r.text),convertEntities=BeautifulSoup.HTML_ENTITIES).text.strip()
 				print_r(r.text)
 		except:
 			pass
